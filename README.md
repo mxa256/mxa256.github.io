@@ -6,7 +6,7 @@ Personal website for Mona Ascha, MD.
 
 ## About
 
-A minimalist single-page personal site built with plain HTML and CSS. 
+A minimalist single-page personal site built with plain HTML and CSS. No frameworks, no build process.
 
 ## Local Development
 
