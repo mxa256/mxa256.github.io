@@ -108,7 +108,46 @@
         a:hover {
             color: var(--color-accent-hover);
         }
+/* ================================
+   Header
+================================ */
+header {
+    padding: 24px 0;
+}
 
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    position: relative;
+}
+
+.header-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent);
+    transition: width 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: var(--color-accent);
+}
+
+.header-nav a:hover::after {
+    width: 100%;
+}
         /* ================================
            Hero Section
         ================================ */
