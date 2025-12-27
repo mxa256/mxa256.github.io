@@ -181,6 +181,10 @@ header {
             color: var(--color-accent);
             margin: 0 12px;
         }
+        .hero-tagline .separator {
+    color: var(--color-accent);
+    margin: 0 12px;
+}
 
         /* ================================
            About Section
@@ -474,19 +478,20 @@ header {
         }
 
         @media (max-width: 480px) {
-            .hero-tagline span {
-                display: none;
-            }
+    .hero-tagline {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 
-            .hero-tagline {
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-            }
-            .header-nav {
-                gap: 16px 24px;
-            }
-        }
+    .hero-tagline .separator {
+        display: none;
+    }
+    
+    .header-nav {
+        gap: 16px 24px;
+    }
+}
     </style>
 </head>
 <body>
@@ -499,7 +504,7 @@ header {
             <a href="https://github.com/mxa256" target="_blank" rel="noopener">GitHub</a>
             <a href="https://scholar.google.com/citations?user=pTf1Dt8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
             <a href="https://pubmed.ncbi.nlm.nih.gov/?term=mona+ascha" target="_blank" rel="noopener">PubMed</a>
-            <a href="#" target="_blank" rel="noopener">Substack</a>
+            <a href="https://monamd.substack.com/" target="_blank" rel="noopener">Substack</a>
         </nav>
     </div>
 </header>
@@ -511,8 +516,14 @@ header {
             <img src="assets/headshot.jpg" alt="Mona Ascha" class="hero-photo">
             <h1>Mona Ascha, MD</h1>
             <p class="hero-tagline">
-                <span aria-hidden="true">·</span>Surgeon<span>·</span>Data Scientist<span>·</span>Consultant<span aria-hidden="true">·</span>
-            </p>
+    <span class="separator">·</span>
+    <span class="role-title">Surgeon</span>
+    <span class="separator">·</span>
+    <span class="role-title">Data Scientist</span>
+    <span class="separator">·</span>
+    <span class="role-title">Consultant</span>
+    <span class="separator">·</span>
+</p>
         </div>
     </section>
 
@@ -629,7 +640,7 @@ header {
                 <a href="https://github.com/mxa256" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://scholar.google.com/citations?user=pTf1Dt8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
                 <a href="https://pubmed.ncbi.nlm.nih.gov/?term=mona+ascha" target="_blank" rel="noopener">PubMed</a>
-                <a href="#" target="_blank" rel="noopener">Substack</a>
+                <a href="https://monamd.substack.com/" target="_blank" rel="noopener">Substack</a>
             </div>
         </div>
     </section>
